@@ -4,4 +4,4 @@
 
 README em desenvolvimento...
 
-                                                                 Muito obrigado !
+Muito obrigado !
