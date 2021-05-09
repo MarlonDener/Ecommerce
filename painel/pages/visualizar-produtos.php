@@ -85,13 +85,13 @@
 			</div><!--box-imgs-->
 			<div style="width: 70%;float: left;border: 0;" class="box-single">
 				<div class="body-box">
-					<p><b><i class="fa fa-pencil"></i> Nome do produto:</b> <?php echo $value['nome'] ?></p>
-					<p><b><i class="fa fa-pencil"></i> Descrição:</b> <?php echo $value['descricao'] ?></p>
-					<p><b><i class="fa fa-pencil"></i> Largura:</b> <?php echo $value['largura'] ?>cm</p>
-					<p><b><i class="fa fa-pencil"></i> Altura:</b> <?php echo $value['altura'] ?>cm</p>
-					<p><b><i class="fa fa-pencil"></i> Comprimento:</b> <?php echo $value['comprimento'] ?>cm</p>
-					<p><b><i class="fa fa-pencil"></i> Peso:</b> <?php echo $value['peso'] ?></p>
-					<p><b><i class="fa fa-pencil"></i> Preço:</b> R$<?php echo Painel::convertMoney($value['preco']); ?></p>
+					<p><strong><i class="fas fa-pencil-ruler"></i> Nome do produto:</strong> <?php echo $value['nome'] ?></p>
+					<p><strong><i class="fas fa-edit"></i> Descrição:</strong> <?php echo $value['descricao'] ?></p>
+					<p><strong><i class="fas fa-pencil-ruler"></i> Largura:</strong> <?php echo $value['largura'] ?>cm</p>
+					<p><strong><i class="fas fa-pencil-ruler"></i> Altura:</strong> <?php echo $value['altura'] ?>cm</p>
+					<p><strong><i class="fas fa-pencil-ruler"></i> Comprimento:</strong> <?php echo $value['comprimento'] ?>cm</p>
+					<p><strong><i class="fas fa-pencil-ruler"></i> Peso:</strong> <?php echo $value['peso'] ?></p>
+					<p><strong><i class="far fa-money-bill-alt"></i> Preço:</strong> R$ <?php echo Painel::convertMoney($value['preco']); ?></p>
 					<div style="padding:8px 0;border-bottom: 1px solid #ccc;" class="group-btn">
 						<form method="post" style="margin: 0;">
 							<label>Quantidade atual:</label>

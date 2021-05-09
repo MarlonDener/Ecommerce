@@ -101,7 +101,10 @@
           </ul>
         </div>
         <div class="bottom">
-          <a href=""><?php echo $value['nome']?></a>
+        <div class="product_name">
+          <img src="<?php INCLUDE_PATH?>pages/images/hand-bag.png">
+          <a href="#"><?php echo $value['nome']?></a>
+        </div>
           <div class="price">
             <span>R$ <?php echo \Painel::convertMoney($value['preco'])?></span>
           </div>
@@ -136,6 +139,42 @@
       </div>
     </div>
   </section>
+
+    <section class="contact" id="contact">
+
+    <div class="image">
+        <img src="<?php echo INCLUDE_PATH?>pages/images/contato.svg" alt="">
+    </div>
+
+    <form action="">
+
+        <h1 class="heading">Entre em contato</h1>
+
+        <div class="inputBox">
+            <input type="text" required>
+            <label>Nome</label>
+        </div>
+
+        <div class="inputBox">
+            <input type="text" required>
+            <label>Email</label>
+        </div>
+
+        <div class="inputBox">
+            <input type="number" required>
+            <label>Telefone</label>
+        </div>
+
+        <div class="inputBox">
+            <textarea required name="" id="" cols="30" rows="10"></textarea>
+            <label>Mensagem</label>
+        </div>
+
+        <input type="submit" class="btn" value="Enviar mensagem">
+
+        </form>
+
+    </section>
 
   <section class="section brands">
     <div class="title">

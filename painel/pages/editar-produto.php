@@ -139,10 +139,10 @@
 			<div class="clear"></div>
 			<div style="text-align: center;" class="group-btn">
 				<a class="btn delete" href="<?php echo INCLUDE_PATH_PAINEL ?>editar-produto?id=<?php echo $id; ?>&deletarImagem=<?php echo $value['imagem'] ?>"><i class="fa fa-times"></i> Excluir</a>
-			</div><!--group-btn-->
+			</div>
 			
 			</div>
-		</div><!--box-single-wraper-->
+		</div>
 		<?php } ?>
-	</div><!--boxes-->
+	</div>
 </div>

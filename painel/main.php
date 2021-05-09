@@ -14,7 +14,8 @@
 	<link rel="stylesheet" href="<?php echo INCLUDE_PATH_PAINEL; ?>css/jquery-ui.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/stefangabos/Zebra_Datepicker/dist/css/default/zebra_datepicker.min.css">
 	<link href="<?php echo INCLUDE_PATH_PAINEL ?>css/style.css" rel="stylesheet" />
-</head>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" /></head>
 <body>
 
 <base base="<?php echo INCLUDE_PATH_PAINEL; ?>" />
@@ -26,11 +27,11 @@
 		?>
 			<div class="avatar-usuario">
 				<i class="fa fa-user"></i>
-			</div>
+			</div><!--avatar-usuario-->
 		<?php }else{ ?>
 			<div class="imagem-usuario">
 				<img src="<?php echo INCLUDE_PATH_PAINEL ?>uploads/<?php echo $_SESSION['img']; ?>" />
-			</div>
+			</div><!--avatar-usuario-->
 		<?php } ?>
 		<div class="nome-usuario">
 			<p><?php echo $_SESSION['nome']; ?></p>
@@ -39,24 +40,25 @@
 	</div><!--box-usuario-->
 	<div class="items-menu">
 		<h2>Administração do painel</h2>
-		
 		<a <?php selecionadoMenu('editar-usuario'); ?> href="<?php echo INCLUDE_PATH_PAINEL ?>editar-usuario">Editar Usuário</a>
 		<a <?php selecionadoMenu('adicionar-usuario'); ?> <?php verificaPermissaoMenu(2); ?> href="<?php echo INCLUDE_PATH_PAINEL ?>adicionar-usuario">Adicionar Usuário</a>
-	
+
 		<a <?php selecionadoMenu('cadastrar-produtos'); ?> href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-produtos">Cadastrar Produtos</a>
 		<a <?php selecionadoMenu('visualizar-produtos'); ?> href="<?php echo INCLUDE_PATH_PAINEL ?>visualizar-produtos">Visualizar Produtos</a>
-	</div>
-	</div>
+	</div><!--items-menu-->
+	</div><!--menu-wraper-->
+</div><!--menu-->
 
 <header>
 	<div class="center">
 		<div class="menu-btn">
 			<i class="fa fa-bars"></i>
-		</div>
+		</div><!--menu-btn-->
+
 		<div class="loggout">
 			<a <?php if(@$_GET['url'] == ''){ ?> style="background: #60727a;padding: 15px;" <?php } ?> href="<?php echo INCLUDE_PATH_PAINEL ?>"> <i class="fa fa-home"></i> <span>Página Inicial</span></a>
 			<a href="<?php echo INCLUDE_PATH_PAINEL ?>?loggout"> <i class="fa fa-window-close"></i> <span>Sair</span></a>
-		</div>
+		</div><!--loggout-->
 
 		<div class="clear"></div>
 	</div>
@@ -68,11 +70,10 @@
 	?>
 </div><!--content-->
 
-<script src="<?php echo INCLUDE_PATH ?>js/jquery.js"></script></script>
-<script src="<?php echo INCLUDE_PATH_PAINEL ?>js/jquery.maskMoney.js"></script>
-<script src="<?php echo INCLUDE_PATH_PAINEL ?>js/jquery.mask.js"></script>
-<script src="<?php echo INCLUDE_PATH_PAINEL ?>js/jquery.ajaxform.js"></script>
-<script src="<?php echo INCLUDE_PATH ?>js/constants.js"></script>
+<script src="<?php echo INCLUDE_PATH ?>js/jquery.js"></script>
 <script src="<?php echo INCLUDE_PATH_PAINEL ?>js/main.js"></script>
- <script src="<?php echo INCLUDE_PATH_PAINEL ?>js/helperMask.js"></script>
+
+	  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
 </html>

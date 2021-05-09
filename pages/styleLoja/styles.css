@@ -14,11 +14,9 @@
   box-sizing: inherit;
 }
 
-
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-
   scroll-behavior: smooth;
 }
 
@@ -413,10 +411,9 @@ nav .wrapper {
   }
 }
 
-/* Hero */
 .hero {
   height: calc(100vh - 6.5rem);
-  background-color: var(--primary);
+  background-color: #0d0730;
   position: relative;
   overflow: hidden;
 }
@@ -672,7 +669,7 @@ nav .wrapper {
 .product .bottom a {
   margin-bottom: 1rem;
   font-weight: inherit;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .product .bottom a:hover {
@@ -993,7 +990,18 @@ td img {
   height: 8rem;
   margin-right: 1rem;
 }
-
+.product_name{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.product_name img{
+  width: 25px;
+  height: 25px;
+  position: relative;
+  bottom: 5px;
+  right: 20px;
+}
 .total-price {
   display: flex;
   justify-content: flex-end;
@@ -1200,8 +1208,6 @@ th:last-child {
   }
 }
 
-/* PRODUCTS */
-
 .products {
   margin-top: 2rem;
 }
@@ -1261,6 +1267,105 @@ th:last-child {
 
 .col-3-of-4 form a:hover {
   background-color: var(--black);
+}
+
+
+
+
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+    background: #0d0730;
+} 
+
+.contact .image{
+     flex:1 1 40rem;
+}
+
+.contact .image img{
+    width:100%;
+    padding:2rem;
+}
+
+ .contact form{
+    flex:1 1 40rem;
+     padding:2rem 3rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    background:#fff;
+}
+
+.contact form .heading{
+    text-align: left;
+    padding:0;
+    padding-bottom: 2rem;
+}
+
+.contact form .inputBox{
+     position: relative;
+    }
+
+    .contact form .inputBox input, .contact form .inputBox textarea{
+        width:100%;
+        background:none;
+        color:#666;
+        margin:1.5rem 0;
+        padding:.5rem 0;
+
+        border:none;
+        font-size: 1.7rem;
+         border-bottom: .1rem solid rgba(0,0,0,.1);
+        text-transform: none;
+        outline: none;
+    }
+
+.contact form .inputBox textarea{
+    resize: none;
+     height: 13rem;
+     padding-left:8px;
+}
+
+.contact form .inputBox label{
+    position: absolute;
+    top:1.7rem; left:0;
+    font-size: 1.7rem;
+    color:#666;
+     transition: .2s linear;
+}
+.box h4{
+    padding: 15px 20px;
+    font-size: 15px;
+    color: var(--pink);
+    text-transform: none;
+}
+.contact form .inputBox input:focus ~ label,
+.contact form .inputBox input:valid ~ label,
+ .contact form .inputBox textarea:focus ~ label,
+.contact form .inputBox textarea:valid ~ label{
+     top:-.5rem;
+    font-size: 1.5rem;
+    color:var(--pink);
+}
+.btn{
+  width: 200px;
+  background: #2b3aab;
+  border: none;
+  font-size: 17px;
+  box-shadow: 4px 2px 3px 2px rgba(0,0,0,0.2);
+  color: #fff;
+  padding: 10px 0px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.4s all ease;
+}
+.btn:hover{
+  box-shadow: 4px 2px 3px 2px rgba(0,0,0,0.4);
+  background: #11397a;
 }
 
 @media only screen and (max-width: 768px) {
