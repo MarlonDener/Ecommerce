@@ -1,17 +1,19 @@
 
+  <!--alerta do ajax aqui -->
+  <div class="alerta open"><i class="fa fa-check"></i>Produto foi adicionado ao seu carrinho</div>
+  
+
   <div class="hero">
     <div class="left">
-      <span>Promoção</span>
-      <h1>50% de desconto</h1>
-      <small>e ofertas exclusivas</small>
+      <span>Promoções</span>
+      <h1>MarlonStore, preços incríveis</h1>
+      <small>e ofertas exclusivas para andar na moda, você só encontra aqui !</small>
       <a href="">Ver coleção </a>
     </div>
     <div class="right">
-      <img src="<?php echo INCLUDE_PATH?>pages/images/hero.png" alt="" />
+      <img class="woman_logo" src="<?php echo INCLUDE_PATH?>pages/images/womanred.png" alt="" />
     </div>
   </div>
-
-  <!-- Promotion -->
 
   <section class="section promotion">
     <div class="title">
@@ -24,23 +26,23 @@
         <img src="<?php echo INCLUDE_PATH?>pages/images/promo1.jpg" alt="" />
         <div class="promotion-content">
           <h3>HOMEM</h3>
-          <a href="">COMPRAR</a>
+          <a class="button_product" href="">COMPRAR</a>
         </div>
       </div>
 
       <div class="promotion-item">
-        <img src="<?php echo INCLUDE_PATH?>pages/images/promo2.jpg" alt="" />
+        <img src="<?php echo INCLUDE_PATH?>pages/images/look.jpg" alt="" />
         <div class="promotion-content">
-          <h3>CASUAL SHOES</h3>
-          <a href="">COMPRAR</a>
+          <h3>CONJUNTO</h3>
+          <a class="button_product" href="">COMPRAR</a>
         </div>
       </div>
 
       <div class="promotion-item">
-        <img src="<?php echo INCLUDE_PATH?>pages/images/promo3.jpg" alt="" />
+        <img src="<?php echo INCLUDE_PATH?>pages/images/imagemlook.jpg" alt="" />
         <div class="promotion-content">
-          <h3>HOMEM</h3>
-          <a href="">COMPRAR</a>
+          <h3>MULHER</h3>
+           <a class="button_product" href="">COMPRAR</a>
         </div>
       </div>
 
@@ -48,7 +50,7 @@
         <img src="<?php echo INCLUDE_PATH?>pages/images/promo4.jpg" alt="" />
         <div class="promotion-content">
           <h3>CINTOS</h3>
-          <a href="">COMPRAR</a>
+           <a class="button_product" href="">COMPRAR</a>
         </div>
       </div>
 
@@ -56,7 +58,7 @@
         <img src="<?php echo INCLUDE_PATH?>pages/images/promo5.jpg" alt="" />
         <div class="promotion-content">
           <h3>BOLSAS</h3>
-          <a href="">COMPRAR</a>
+          <a class="button_product" href="">COMPRAR</a>
         </div>
       </div>
 
@@ -64,7 +66,7 @@
         <img src="<?php echo INCLUDE_PATH?>pages/images/promo6.jpg" alt="" />
         <div class="promotion-content">
           <h3>RELÓGIOS</h3>
-          <a href="">COMPRAR</a>
+          <a class="button_product" href="">COMPRAR</a>
         </div>
       </div>
     </div>
@@ -86,8 +88,14 @@
     $sql->execute(array($value['id']));
     $imagem = $sql->fetch()['imagem'];
     $valor = $value['id']
- ?>
+ ?> 
       <div class="product">
+
+        <div class="product_name">
+          <img src="<?php INCLUDE_PATH?>pages/images/hand-bag.png">
+          <a class="name_product" href="#"><?php echo $value['nome']?></a>
+        </div>
+
         <div class="img-container">
           <img src="<?php echo INCLUDE_PATH?>painel/uploads/<?php echo $imagem?>" alt="" />
           <div class="addCart" id="botaoadd" data-value='<?php echo $valor ?>'>
@@ -101,10 +109,8 @@
           </ul>
         </div>
         <div class="bottom">
-        <div class="product_name">
-          <img src="<?php INCLUDE_PATH?>pages/images/hand-bag.png">
-          <a href="#"><?php echo $value['nome']?></a>
-        </div>
+          <p><?php echo $value['descricao']?></p>
+ 
           <div class="price">
             <span>R$ <?php echo \Painel::convertMoney($value['preco'])?></span>
           </div>
@@ -117,26 +123,44 @@
     </div>
   </section>
 
-  <div class="alerta open"><i class="fa fa-check"></i>Produto foi adicionado ao seu carrinho</div>
 
-  <section class="section advert">
-    <div class="advert-layout container">
-      <div class="item ">
-        <img src="<?php echo INCLUDE_PATH?>pages/images/promo7.jpg" alt="">
-        <div class="content left">
-          <span>Exclusivos</span>
-          <h3>Coleções de primavera</h3>
-          <a href="">Ver coleções</a>
+     <section class="section brands">
+    <div class="title">
+      <h2>Marcas</h2>
+      <span>Selecione uma das marcas de produtos premium e economize muito dinheiro</span>
+    </div>
+
+    <div class="brand-layout container">
+      <div class="glide" id="glide1">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <img src="<?php echo INCLUDE_PATH?>pages/images/brand1.png" alt="">
+            </li>
+            <li class="glide__slide">
+              <img src="<?php echo INCLUDE_PATH?>pages/images/brand2.png" alt="">
+            </li>
+            <li class="glide__slide">
+              <img src="<?php echo INCLUDE_PATH?>pages/images/brand3.png" alt="">
+            </li>
+            <li class="glide__slide">
+              <img src="<?php echo INCLUDE_PATH?>pages/images/brand4.png" alt="">
+            </li>
+            <li class="glide__slide">
+              <img src="<?php echo INCLUDE_PATH?>pages/images/brand5.png" alt="">
+            </li>
+            <li class="glide__slide">
+              <img src="<?php echo INCLUDE_PATH?>pages/images/brand6.png" alt="">
+            </li>
+            <li class="glide__slide">
+              <img src="<?php echo INCLUDE_PATH?>pages/images/brand7.png" alt="">
+            </li>
+            
+            
+          </ul>
         </div>
       </div>
-      <div class="item">
-        <img src="<?php echo INCLUDE_PATH?>pages/images/promo8.jpg" alt="">
-        <div class="content  right">
-          <span>Novas tendências</span>
-          <h3>Bolsas</h3>
-          <a href="">COMPRAR </a>
-        </div>
-      </div>
+
     </div>
   </section>
 
@@ -176,43 +200,5 @@
 
     </section>
 
-  <section class="section brands">
-    <div class="title">
-      <h2>Marcas</h2>
-      <span>Selecione uma das marcas de produtos premium e economize muito dinheiro</span>
-    </div>
-
-    <div class="brand-layout container">
-      <div class="glide" id="glide1">
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-            <li class="glide__slide">
-              <img src="<?php echo INCLUDE_PATH?>pages/images/brand1.png" alt="">
-            </li>
-            <li class="glide__slide">
-              <img src="<?php echo INCLUDE_PATH?>pages/images/brand2.png" alt="">
-            </li>
-            <li class="glide__slide">
-              <img src="<?php echo INCLUDE_PATH?>pages/images/brand3.png" alt="">
-            </li>
-            <li class="glide__slide">
-              <img src="<?php echo INCLUDE_PATH?>pages/images/brand4.png" alt="">
-            </li>
-            <li class="glide__slide">
-              <img src="<?php echo INCLUDE_PATH?>pages/images/brand5.png" alt="">
-            </li>
-            <li class="glide__slide">
-              <img src="<?php echo INCLUDE_PATH?>pages/images/brand6.png" alt="">
-            </li>
-            <li class="glide__slide">
-              <img src="<?php echo INCLUDE_PATH?>pages/images/brand7.png" alt="">
-            </li>
-            
-            
-          </ul>
-        </div>
-      </div>
-
-    </div>
-  </section>
+ 
 

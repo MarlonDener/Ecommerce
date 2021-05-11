@@ -64,7 +64,7 @@ body{
 
 /*Página de login*/
 .box-login{
-	box-shadow: 10px 10px 5px rgb(200,200,200);
+	box-shadow: 10px 10px 5px rgb(0,0,0,0.4);
 	max-width: 600px;
 	width: 95%;
 	padding: 60px 2%;
@@ -82,19 +82,22 @@ body{
 	text-transform: uppercase;
 	font-weight: normal;
 	margin:10px 0;
-	color: #fff;
+	color: #000;
 }
 
 .box-login input[type=text],
 .box-login input[type=password]
 {
+	outline: none;
 	width: 100%;
 	height: 40px;
 	border: 1px solid #ccc;
 	padding-left: 8px;
 	margin-top:8px;
 }
-
+input[type=submit]{
+	box-shadow: 3px 4px 6px 3px rgba(0,0,0,0.2);
+}
 .box-login input[type=submit]{
 	width: 100px;
 	height: 40px;
@@ -104,10 +107,14 @@ body{
 	background: #00bfa5;
 	color: white;
 	border: 0;
+	outline: none;
+}
+input[type=submit]:hover{
+
+	transition: 0.4s all ease;
+	opacity: 0.7;
 }
 
-
-/*Box erro do painel*/
 
 .erro-box{
 	width: 100%;
@@ -195,13 +202,14 @@ header{
 }
 
 .items-menu h2{
-	text-align: left;
-	font-weight: normal;
+	text-align: center;
 	font-size: 17px;
-	background: linear-gradient(#1151b8,#072e6e);
 	color: white;
-	padding:8px;
+	padding:15px 0px;
+	font-weight: bold;
+	opacity: 0.8;
 	border-top: 1px solid rgba(255,255,255,0.3);
+	border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 
 .items-menu a{
@@ -277,12 +285,15 @@ div.box-usuario{
 .w50{
 	width: 49%;
 }
-
+.woman_logo{
+	margin-right: 30px;
+}
 .left{
 	float: left;
 }
 
 .right{
+
 	float: right;
 }
 
@@ -508,7 +519,7 @@ a.btn.order{background: #0091ea;}
 .box-content form input[type=submit]{
 	width: auto;
 	height: 40px;
-	padding:3px 8px;
+	padding:3px 25px;
 	cursor: pointer;
 	margin-top: 10px;
 	font-size: 16px;
@@ -517,7 +528,6 @@ a.btn.order{background: #0091ea;}
 	border: 0;
 }
 
-/*Box de alerta!*/
 
 .box-alert{
 	width: 100%;
@@ -549,9 +559,6 @@ a.btn.order{background: #0091ea;}
 .menu-active{
 	background: linear-gradient(#3275a8,#5f8cd4);
 }
-
-
-
 
 .form-group-login label{
 	font-size: 13px;

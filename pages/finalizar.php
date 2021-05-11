@@ -30,7 +30,6 @@
                   <p><?php echo $produto['nome']?></p>
                   <span></span>
                   <br />
-                  <a href="#">remove</a>
                 </div>
               </div>
             </td>
@@ -48,12 +47,13 @@
         <div class="total-price">
           <table>
             <tr>
-              <td>Total</td>
-              <td><?php echo Painel::convertMoney($total)?></td>
+              <td>Valor total:</td>
+              <td><strong><?php echo Painel::convertMoney($total)?></strong></td>
             </tr>
           </table>
-          <a href="#" class="checkout btn" id="btn-pagamento">Pagar agora</a>
         </div>
+
+          <a href="#" id="btn-pagamento">Pagar agora</a>
       </div>
 <script src="<?php echo INCLUDE_PATH?>js/jquery.js"></script>
 <script src="https://stc.sandbox.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>

@@ -9,10 +9,10 @@
 
 			$nome = $_POST['nome'];
 			$descricao = $_POST['descricao'];
-			$largura = $_POST['largura'];
-			$altura = $_POST['altura'];
-			$peso = $_POST['peso'];
-			$comprimento = $_POST['comprimento'];
+			$largura = 5;
+			$altura = 5;
+			$peso = 5;
+			$comprimento = 5;
 			$quantidade = $_POST['quantidade'];
 			$preco = Painel::formatarMoedaBd($_POST['preco']);
 
@@ -64,31 +64,33 @@
 			<textarea name="descricao"></textarea>
 		</div><!--form-group-->
 
-		<div class="form-group">
+		<!--<div class="form-group">
 			<label>Largura do produto:</label>
 			<input type="number" name="largura" min="0" max="900" step="5" value="0">
-		</div><!--form-group-->
+		</div>
 
 
 		<div class="form-group">
 			<label>Altura do produto:</label>
 			<input type="number" name="altura" min="0" max="900" step="5" value="0">
-		</div><!--form-group-->
+		</div>
 
 		<div class="form-group">
 			<label>Comprimento do produto:</label>
 			<input type="number" name="comprimento" min="0" max="900" step="5" value="0">
-		</div><!--form-group-->
+		</div>
 
 		<div class="form-group">
 			<label>Peso do produto:</label>
 			<input type="number" name="peso" min="0" max="900" step="5" value="0">
-		</div><!--form-group-->
+		</div>
 
+	-->
 		<div class="form-group">
 			<label>Quantidade atual do produto:</label>
 			<input type="number" name="quantidade" min="0" max="900" step="5" value="0">
-		</div><!--form-group-->
+		</div>
+
 
 		<div class="form-group">
 			<label>Preço:</label>

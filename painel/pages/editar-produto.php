@@ -45,7 +45,7 @@
 			$sucesso = true;
 			$amountFiles = count($_FILES['imagem']['name']);
 			if($_FILES['imagem']['name'][0] != ''){
-				//Nosso usuário quer adicionar mais imagens no produto!
+
 				for($i =0; $i < $amountFiles; $i++){
 					$imagemAtual = ['type'=>$_FILES['imagem']['type'][$i],
 					'size'=>$_FILES['imagem']['size'][$i]];
@@ -123,7 +123,7 @@
 		<div class="form-group">
 			<label>Selecione as imagens:</label>
 			<input multiple type="file" name="imagem[]">
-		</div><!--form-group-->
+		</div>
 		<input type="submit" name="acao" value="Atualizar Produto!">
 	</form>
 		<div class="card-title"><i class="fa fa-rocket"></i> Imagens do produto:</div>
@@ -135,7 +135,7 @@
 			<div style="border: 1px solid #ccc;padding:8px 15px;">
 			<div style="width: 100%;float: left;" class="box-imgs">
 				<img class="img-square" src="<?php echo INCLUDE_PATH_PAINEL ?>uploads/<?php echo $value['imagem'] ?>" />
-			</div><!--box-imgs-->
+			</div>
 			<div class="clear"></div>
 			<div style="text-align: center;" class="group-btn">
 				<a class="btn delete" href="<?php echo INCLUDE_PATH_PAINEL ?>editar-produto?id=<?php echo $id; ?>&deletarImagem=<?php echo $value['imagem'] ?>"><i class="fa fa-times"></i> Excluir</a>
