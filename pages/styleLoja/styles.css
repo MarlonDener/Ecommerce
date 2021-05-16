@@ -27,20 +27,32 @@ body {
   color: var(--black);
   font-weight: 400;
 }
+.cobrir{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:rgba(0,0,0,0.8);
+  z-index: 100;
+  transition: 0.7s ease-out;
+  display: none;
+}
 
 .alerta {
-  background: #30c22b;
+  z-index: 200;
+  background:#29a32d;
   position: fixed;
-  top: 12%;
+  top: 40%;
   opacity: 0;
   left: 50%;
   transform: translateX(-50%);
-  padding: 7px 30px;
+  padding: 10px 60px;
   color: var(--white);
-  font-size: 16px;
+  font-size: 21px;
   border-radius: 7px;
   box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.1);
-  transition: opacity 0.7s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 .fa-check{
   margin-right: 12px;
@@ -71,12 +83,6 @@ li {
 @media only screen and (max-width: 1200px) {
   .container {
     padding: 0 3rem;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .container {
-    max-width: 60rem;
   }
 }
 
@@ -253,13 +259,15 @@ nav .wrapper {
   cursor: pointer;
   display: none;
 }
-
 .nav-list .icons span {
   display: inline-block;
   margin: 0.5rem 1rem 0 0;
   position: relative;
+  transition: 0.4s ease-in-out;
 }
-
+.nav-list .icons span:hover{
+  opacity: 0.5;
+}
 .nav-list .icons .count {
   justify-content: center;
   position: absolute;
@@ -271,6 +279,14 @@ nav .wrapper {
   color: var(--white);
   font-weight: 700;
   border-radius: 50%;
+}
+
+.paginator{
+  position: relative;
+  top: -40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 968px) {
@@ -496,6 +512,8 @@ nav .wrapper {
     right: -10%;
   }
 }
+
+
 
 @media only screen and (max-width: 567px) {
   .hero .left {
@@ -731,6 +749,7 @@ nav .wrapper {
   flex-direction: column;
   padding: 1rem;
   transition: all 500ms ease-in-out;
+
 }
 
 .product .side-icons span {
@@ -850,7 +869,13 @@ table {
   display: flex;
   flex-wrap: wrap;
 }
-
+.cart-info img{
+  border-radius: 50%;
+}
+.top-name{
+  position: relative;
+  top: 15px;
+}
 .cart-info span {
   color: var(--grey2);
 }
@@ -888,6 +913,7 @@ td img {
   height: 8rem;
   margin-right: 1rem;
 }
+
 .product_name{
   display: flex;
   align-items: center;
@@ -900,9 +926,7 @@ td img {
 .product_name img{
   width: 25px;
   height: 25px;
-  position: relative;
-  bottom: 5px;
-  right: 20px;
+  margin-right: 15px;
 }
 .total-price {
   display: flex;
@@ -910,7 +934,7 @@ td img {
   align-items: end;
   flex-direction: column;
   margin-top: 2rem;
-  font-size: 25px;
+  font-size: 20px;
 }
 .total-price strong{
   color: green;
@@ -947,19 +971,24 @@ td img {
   width: 100%;
   max-width: 35rem;
 }
-
+.btn-bg{
+  margin-top: 80px;
+  margin-left: 20px;
+  padding: 10px 17px;
+  border-radius: 20px;
+  color: #fff;
+  background-color: var(--primary);
+}
+.btn-bg:hover{
+  opacity: 0.8;
+  font-weight: bold;
+}
 td:last-child {
   text-align: right;
 }
 
 th:last-child {
   text-align: right;
-}
-
-@media only screen and (max-width: 567px) {
-  .cart-info p {
-    display: none;
-  }
 }
 
 
@@ -1163,75 +1192,6 @@ th:last-child {
     margin-right: 0;
     margin-bottom: 1rem;
   }
-}
-
-@media only screen and (max-width: 567px) {
-  .col-3-of-4 .product-layout {
-    grid-template-columns: 1fr;
-  }
-}
-
-.col-1-of-4 .block-title {
-  color: var(--grey1);
-  margin-bottom: 1.6rem;
-}
-
-.col-1-of-4 h3 {
-  font-size: 2.7rem;
-  font-weight: inherit;
-}
-
-.col-1-of-4 div {
-  margin-bottom: 8rem;
-}
-
-.block-content li {
-  margin-bottom: 1rem;
-}
-
-.block-content li label {
-  color: var(--grey2);
-  margin-left: 1rem;
-}
-
-.block-content li label small {
-  font-size: 1rem;
-}
-
-.block-content li input {
-  outline: none;
-}
-
-.pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 4rem 0;
-}
-
-.pagination span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: 50%;
-  color: var(--black);
-  font-size: 1.3rem;
-  border: 1px solid var(--grey2);
-  margin-right: 0.5rem;
-  cursor: pointer;
-}
-
-.pagination span.last {
-  width: 7rem;
-  border-radius: 3rem;
-}
-
-.pagination span:hover {
-  border: 1px solid var(--primary);
-  background-color: var(--primary);
-  color: var(--white);
 }
 
 @media only screen and (max-width: 768px) {

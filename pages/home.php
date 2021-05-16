@@ -1,7 +1,7 @@
 
   <!--alerta do ajax aqui -->
-  <div class="alerta open"><i class="fa fa-check"></i>Produto foi adicionado ao seu carrinho</div>
-  
+  <div class="alerta open"><i class="fa fa-check"></i>Parabéns, o produto foi adicionado ao seu carrinho</div>
+  <div class="cobrir">.</div>
 
   <div class="hero">
     <div class="left">
@@ -92,11 +92,12 @@
       <div class="product">
 
         <div class="product_name">
-          <img src="<?php INCLUDE_PATH?>pages/images/hand-bag.png">
+          <img src="<?php INCLUDE_PATH?>pages/images/backpack.png">
           <a class="name_product" href="#"><?php echo $value['nome']?></a>
         </div>
 
         <div class="img-container">
+          sadas
           <img src="<?php echo INCLUDE_PATH?>painel/uploads/<?php echo $imagem?>" alt="" />
           <div class="addCart" id="botaoadd" data-value='<?php echo $valor ?>'>
             <a><i class="fas fa-shopping-cart"></i></a>
@@ -109,19 +110,38 @@
           </ul>
         </div>
         <div class="bottom">
-          <p><?php echo $value['descricao']?></p>
+          <p><?php echo $value['descricao'];?></p>
+
  
           <div class="price">
+
             <span>R$ <?php echo \Painel::convertMoney($value['preco'])?></span>
           </div>
         </div>
       </div>
       <?php 
         }
+
       ?>
 
     </div>
+
   </section>
+
+  <div class="paginator">
+
+    <?php 
+    $i = 1;
+    $calculate = \models\homeModel::Calculate();
+
+    while($i <= $calculate)
+    { 
+      echo "<a href='?page=$i' class='btn-bg'>$i</a>";
+      $i++;
+    }
+    ?>
+
+  </div>
 
 
      <section class="section brands">
@@ -199,6 +219,3 @@
         </form>
 
     </section>
-
- 
-

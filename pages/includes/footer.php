@@ -5,7 +5,6 @@
       <div class="footer-container">
         <div class="footer-center">
           <h3>EXTRAS</h3>
-          <a href="#">Logos</a>
           <a href="#">Certificados</a>
           <a href="#">Afiliados</a>
           <a href="#">Especial</a>
@@ -17,12 +16,10 @@
           <a href="#">Privacidade</a>
           <a href="#">Termos & Condições</a>
           <a href="#">Contato</a>
-          <a href="#">Maoa</a>
         </div>
         <div class="footer-center">
           <h3>Minha conta</h3>
           <a href="#">Conta</a>
-          <a href="#">Order History</a>
           <a href="#">Lista de desejos</a>
           <a href="#">Noticia</a>
           <a href="#">Retornar</a>
@@ -33,7 +30,7 @@
             <span>
               <i class="fas fa-map-marker-alt"></i>
             </span>
-            Rua Qualquer , 47131 São-PAULO
+           Rua das Palmeiras - São Paulo
           </div>
           <div>
             <span>
@@ -76,13 +73,17 @@
     .done(function(msg) {
         $('#totalCart').text(msg);
         $('.alerta').css('opacity','1');
+        $('.cobrir').css('display','block');
 
+        $('.nav').css('opacity','0.1');
         setTimeout(function(){ 
 
         $('.alerta').css('opacity','0');
 
+        $('.cobrir').css('display','none');
 
-         }, 3000);
+        $('.nav').css('opacity','1');
+         }, 2000);
     });
 
 })

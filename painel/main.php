@@ -9,6 +9,7 @@
 	<title>Painel de Controle</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="<?php echo INCLUDE_PATH?>pages/images/backpack.png" type="image/x-icon" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>estilo/font-awesome.min.css">
 	<link rel="stylesheet" href="<?php echo INCLUDE_PATH_PAINEL; ?>css/jquery-ui.min.css">
@@ -27,7 +28,7 @@
 		?>
 			<div class="avatar-usuario">
 				<i class="fa fa-user"></i>
-			</div><!--avatar-usuario-->
+			</div>
 		<?php }else{ ?>
 			<div class="imagem-usuario">
 				<img src="<?php echo INCLUDE_PATH_PAINEL ?>uploads/<?php echo $_SESSION['img']; ?>" />
