@@ -101,8 +101,8 @@
 						</form>
 					</div><!--group-btn-->
 					<div class="group-btn">
-						<a class="btn delete" href="<?php echo INCLUDE_PATH_PAINEL ?>visualizar-produtos?deletar=<?php echo $value['id']; ?>"><i class="fa fa-times"></i> Excluir</a>
-						<a class="btn edit" href="<?php echo INCLUDE_PATH_PAINEL ?>editar-produto?id=<?php echo $value['id'] ?>"><i class="fa fa-pencil"></i> Editar</a>
+						<a style="padding: 10px 11px" class="btn delete" href="<?php echo INCLUDE_PATH_PAINEL ?>visualizar-produtos?deletar=<?php echo $value['id']; ?>"><i class="fa fa-times"></i> Excluir</a>
+						<a style="padding: 10px 11px;" class="btn edit" href="<?php echo INCLUDE_PATH_PAINEL ?>editar-produto?id=<?php echo $value['id'] ?>"><i class="fa fa-pencil"></i> Editar</a>
 					</div><!--group-btn-->
 				</div><!--body-box-->
 			</div><!--box-single-->
@@ -111,7 +111,6 @@
 		</div><!--box-single-wraper-->
 
 		<?php } ?>
-		
 
 		
 
@@ -195,3 +194,12 @@
 </div>
 
 <?php } ?>
+
+
+	<style type="text/css">
+		
+			a.btn:hover{
+				transition: 0.8s linear;
+				opacity: 0.7;
+			}
+	</style>

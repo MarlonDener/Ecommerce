@@ -54,6 +54,25 @@ body {
   box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.1);
   transition: opacity 1s ease-in-out;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#2a1d91;
+
+}
+
+
+
 .fa-check{
   margin-right: 12px;
 }

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 *{
 	margin: 0;
 	padding: 0;
@@ -1170,10 +1170,9 @@ table a.btn{
 
 a.btn{
 	font-weight: normal;
-	font-size: 13px;
 	color: white;
 	text-decoration: none;
-	padding: 4px 6px;
+	padding: 15px 10px;
 }
 
 a.btn.edit{background: #F4B03E;}
