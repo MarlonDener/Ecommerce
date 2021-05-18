@@ -47,9 +47,9 @@
       </div>
 
       <div class="promotion-item">
-        <img src="<?php echo INCLUDE_PATH?>pages/images/promo4.jpg" alt="" />
+        <img style="width: 260px;" src="<?php echo INCLUDE_PATH?>pages/images/mochila.jpg" alt="" />
         <div class="promotion-content">
-          <h3>CINTOS</h3>
+          <h3>BOLSA</h3>
            <a class="button_product" href="">COMPRAR</a>
         </div>
       </div>
@@ -57,7 +57,7 @@
       <div class="promotion-item">
         <img src="<?php echo INCLUDE_PATH?>pages/images/promo5.jpg" alt="" />
         <div class="promotion-content">
-          <h3>BOLSAS</h3>
+          <h3>MODHILA</h3>
           <a class="button_product" href="">COMPRAR</a>
         </div>
       </div>
@@ -97,7 +97,6 @@
         </div>
 
         <div class="img-container">
-          sadas
           <img src="<?php echo INCLUDE_PATH?>painel/uploads/<?php echo $imagem?>" alt="" />
           <div class="addCart" id="botaoadd" data-value='<?php echo $valor ?>'>
             <a><i class="fas fa-shopping-cart"></i></a>

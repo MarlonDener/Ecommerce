@@ -14,7 +14,7 @@
 			return $sql->fetchAll();
 			}else{
 
-			$sql = \MySql::conectar()->prepare("SELECT * FROM `tb_admin.estoque` LIMIT 12");
+			$sql = \MySql::conectar()->prepare("SELECT * FROM `tb_admin.estoque`  ORDER BY id DESC LIMIT 12 ");
 			$sql->execute();
 			return $sql->fetchAll();
 			}
