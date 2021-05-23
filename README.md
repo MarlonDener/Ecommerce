@@ -1,6 +1,6 @@
 <h2>Loja virtual + Painel do administrador</h2>
 
-Nesse projeto estou utilizando HTML, CSS, Javascript, Jquery, AJAX e PHP como principal linguagem de Back-End.
+Nesse projeto estou utilizando HTML, CSS, Javascript, AJAX e PHP.
 
 Para efetuar método de pagamento, optei por utilizar o PagSeguro.
 https://acesso.pagseguro.uol.com.br/sandbox
