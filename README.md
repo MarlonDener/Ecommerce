@@ -6,8 +6,6 @@ Para efetuar método de pagamento, optei por utilizar o PagSeguro.
 https://acesso.pagseguro.uol.com.br/sandbox
 <br>
 
-<br>
-
 <h3>Loja</h3>
 
 <br>
