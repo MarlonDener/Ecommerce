@@ -26,4 +26,4 @@ Foi um projeto muito desafiador, onde aprendi muitas práticas durante o seu des
 
 Logo estarei desenvolvendo o README mais completo, enfim agraço por estar aqui.
 
-Muito obrigado !
+Muito obrigado!
