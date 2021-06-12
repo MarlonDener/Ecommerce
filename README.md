@@ -23,7 +23,6 @@ https://acesso.pagseguro.uol.com.br/sandbox
 
 
 Foi um projeto muito desafiador, onde aprendi muitas práticas durante o seu desenvolvimento.
-
-Logo estarei desenvolvendo o README mais completo, enfim agraço por estar aqui.
+0Logo estarei desenvolvendo o README mais completo, enfim agraço por estar aqui.
 
 Muito obrigado!
